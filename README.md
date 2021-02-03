@@ -1,4 +1,8 @@
-#Calculator
+***Calculator***
+
+**Feb.3.21. update:**
+
+![Calculator](https://user-images.githubusercontent.com/29080731/106743563-9287e980-65ec-11eb-8980-187df90dcb75.png)
 
 will update to add color, resize buttons etc. The main goal, which is a working algorithm is a success.
 
