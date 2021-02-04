@@ -232,8 +232,7 @@ public class Calculator extends Application {
 
         //Display Results
         double results = answer;
-        if (e.getSource() == btnCalculate){
-            input.setText(String.format("%.1f", results));}
+        if (e.getSource() == btnCalculate){input.setText(String.format("%.1f", results));}
         
     /** Launch Application */
     public static void main(String[] args) {
