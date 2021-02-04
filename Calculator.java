@@ -221,19 +221,20 @@ public class Calculator extends Application {
 
         //Perform calculations based on operators
         if (getNumberInput.contains("+")) {
-            answer = Integer.parseInt(number1) + Integer.parseInt(number2);
+            answer = Double.parseDouble(number1) + Double.parseDouble(number2);
         } else if (getNumberInput.contains("-")) {
-            answer = Integer.parseInt(number1) - Integer.parseInt(number2);
+            answer = Double.parseDouble(number1) - Double.parseDouble(number2);
         } else if (getNumberInput.contains("*")) {
-            answer = Integer.parseInt(number1) * Integer.parseInt(number2);
+            answer = Double.parseDouble(number1) * Double.parseDouble(number2);
         } else if (getNumberInput.contains("/")){
-            answer = Integer.parseInt(number1) / Integer.parseInt(number2);
+            answer = Double.parseDouble(number1) / Double.parseDouble(number2);
         }
 
         //Display Results
-        int results = answer;
-        if (e.getSource() == btnCalculate){input.setText("" + results);}
-    }
+        double results = answer;
+        if (e.getSource() == btnCalculate){
+            input.setText(String.format("%.1f", results));}
+        
     /** Launch Application */
     public static void main(String[] args) {
         launch(args);
